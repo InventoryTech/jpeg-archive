@@ -14,7 +14,7 @@ ifeq ($(UNAME_S),Linux)
 	ifneq ("$(wildcard $(MOZJPEG_PREFIX)/lib64/libjpeg.a)","")
 		LIBJPEG = $(MOZJPEG_PREFIX)/lib64/libjpeg.a
 	else
-		LIBJPEG = $(MOZJPEG_PREFIX)/lib/libjpeg.a
+		LIBJPEG = $(MOZJPEG_PREFIX)/lib32/libjpeg.a
 	endif
 else ifeq ($(UNAME_S),Darwin)
 	# Mac OS X
